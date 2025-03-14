@@ -68,6 +68,7 @@ a {
   background-color: #c8abf5;
   color: white;
   transition: all 200ms ease-in;
+  cursor: pointer;
 }
 .submit-button:hover {
   background-color: #b08fe2;
