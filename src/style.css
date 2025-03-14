@@ -1,4 +1,83 @@
 body {
-  background-color: #c2edd7;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+    -20deg,
+    #e9defa 0%,
+    #7db9bb 100%
+  );
+  height: 100vh;
+}
+h1,
+h2 {
+  font-family: "Playpen Sans", cursive;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.5;
+  margin: 0 0 20px;
+  color: #7db9bb;
+}
+form {
+  padding: 20px;
+}
+footer {
+  padding-top: 30px;
+  font-size: 14px;
+  text-align: center;
+}
+a {
+  color: #7db9bb;
+}
+/* */
+.container {
+  background-color: white;
+  box-shadow: 0px 20px 60px rgba(158, 196, 197, 0.2);
+  margin: 80px auto;
+  padding: 30px;
+  max-width: 600px;
+  border-radius: 10px;
+}
+.form-inputs {
+  display: flex;
+}
+.prompt {
+  padding: 12px;
+  border: 1px solid, #9ec4c5;
+  border-radius: 50px;
+  width: 70%;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #7a59ab;
+  margin-right: 5px;
+}
+.example {
+  margin: 10px 0 0;
+  color: #7db9bb;
+  font-size: 14px;
+}
+.submit-button {
+  width: 20%;
+  padding: 12px 18px;
+  font-size: 18px;
+  line-height: 1.2;
+  border-radius: 50px;
+  border: 1px solid #c8abf5;
+  background-color: #c8abf5;
+  color: white;
+  transition: all 200ms ease-in;
+}
+.submit-button:hover {
+  background-color: #b08fe2;
+  border: 1px solid #b08fe2;
+}
+.baby-name {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #e9defa;
+  border-left: 5px solid #b08fe2;
+  font-size: 16px;
+  line-height: 1.5;
 }

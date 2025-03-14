@@ -7,52 +7,81 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Baby Name Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to the Baby name generator</h1>
-    </header>
-    <main>
-      <form action="">
-        <input
-          type="text"
-          placeholder="Enter a term to find a baby name"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-        <p>
-          E.g. "Love", "Strength", "Goddess of war", etc
-        </p>
-      </form>
-      <div>
-        <p>
-          Bella
-          <br />
-          Bella is a feminine name of Latin, Spanish, and
-          Italian origin. If you want to remind baby of
-          their natural beauty—inside and out—naming them
-          Bella is sure to have a gorgeous effect.
-        </p>
-      </div>
-    </main>
-    <footer>
-      This AI project was coded by Anna Sutherland, and is
-      <a
-        href="https://github.com/AnnaLSutherland/baby-name-generator"
-        target="_blank"
-        >open-sourced on Github</a
-      >
-      and is
-      <a
-        href="https://sensational-sunshine-1234df.netlify.app"
-        target="_blank"
-        >hosted on netlify</a
-      >
-    </footer>
+    <div class="container">
+      <header>
+        <h1>FIND A BABY NAME</h1>
+      </header>
+      <main>
+        <form action="">
+          <div class="form-inputs">
+            <input
+              type="text"
+              placeholder="Enter a term to find a baby name"
+              autofocus
+              required
+              autocomplete="off"
+              class="prompt"
+            />
+            <input type="submit" class="submit-button" />
+          </div>
+          <p class="example">
+            E.g. "Love", "Strength", "Goddess of war", etc
+          </p>
+        </form>
+
+        <div class="baby-name">
+          <p>
+            Bella
+            <br />
+            Bella is a feminine name of Latin, Spanish, and
+            Italian origin. If you want to remind baby of
+            their natural beauty—inside and out—naming them
+            Bella is sure to have a gorgeous effect.
+          </p>
+        </div>
+      </main>
+      <footer>
+        This AI project was coded by Anna Sutherland, <br />
+        and is
+        <a
+          href="https://github.com/AnnaLSutherland/baby-name-generator"
+          target="_blank"
+          >open-sourced on Github</a
+        >
+        and is
+        <a
+          href="https://sensational-sunshine-1234df.netlify.app"
+          target="_blank"
+          >hosted on netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/script.js"></script>
   </body>
 </html>
