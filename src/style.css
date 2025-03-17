@@ -19,6 +19,14 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+h2 {
+  margin: 0 0 15px;
+  font-size: 36px;
+  font-family: "Playpen Sans", cursive;
+  background: linear-gradient(-20deg, #c8abf5, #85b9bb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 form {
   padding: 20px;
 }
@@ -71,21 +79,24 @@ a:hover {
   font-size: 18px;
   line-height: 1.2;
   border-radius: 50px;
-  border: 1px solid #c8abf5;
-  background-color: #c8abf5;
+  border: 1px solid #b08fe2;
+  background-color: #b08fe2;
   color: white;
   transition: all 200ms ease-in;
   cursor: pointer;
 }
 .submit-button:hover {
-  background-color: #b08fe2;
-  border: 1px solid #b08fe2;
+  background-color: #c8abf5;
+  border: 1px solid #c8abf5;
 }
 .baby-name {
   margin-top: 20px;
   padding: 20px;
-  background-color: #ede7f8;
+  background-color: #efebf6;
   border-left: 5px solid #b08fe2;
   font-size: 16px;
   line-height: 1.5;
+}
+.baby-name strong {
+  color: #b08fe2;
 }

@@ -30,6 +30,7 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Baby Name Generator</title>
   </head>
@@ -43,11 +44,12 @@
           <div class="form-inputs">
             <input
               type="text"
-              placeholder="Enter a term to find a baby name"
+              placeholder="Enter a word/phrase to find a baby name"
               autofocus
               required
               autocomplete="off"
               class="prompt"
+              id="prompt-name"
             />
             <input type="submit" class="submit-button" />
           </div>
@@ -56,9 +58,7 @@
           </p>
         </form>
 
-        <div class="baby-name" id="baby-name">
-          <p></p>
-        </div>
+        <div class="baby-name" id="baby-name"></div>
       </main>
       <footer>
         This AI project was coded by Anna Sutherland, <br />
