@@ -103,12 +103,3 @@ a:hover {
 .baby-name strong {
   color: #b08fe2;
 }
-.blink {
-  animation: blinker 1s step-start infinite;
-}
-
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-}

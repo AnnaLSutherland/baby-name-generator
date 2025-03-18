@@ -21,7 +21,7 @@ function generateBabyName(event) {
   let babyNameElement =
     document.querySelector("#baby-name");
   babyNameElement.classList.remove("hidden");
-  babyNameElement.innerHTML = `<span class="blink">Generating a baby name that means '${instructionsInput.value}'</span>`;
+  babyNameElement.innerHTML = `⏳ Generating a baby name that means '${instructionsInput.value}'`;
   axios.get(apiURL).then(displayBabyName);
 }
 
