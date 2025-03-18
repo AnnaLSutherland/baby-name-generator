@@ -1,6 +1,4 @@
 function displayBabyName(response) {
-  console.log("Baby name generated");
-
   new Typewriter("#baby-name", {
     strings: response.data.answer,
     autoStart: true,
@@ -12,7 +10,6 @@ function displayBabyName(response) {
 function generateBabyName(event) {
   event.preventDefault();
 
-  // Build the API URL
   let instructionsInput =
     document.querySelector("#prompt-name");
   let apiKey = "d36aa0424f0b7a4te0a504eba4fo6786";
@@ -25,14 +22,7 @@ function generateBabyName(event) {
     document.querySelector("#baby-name");
   babyNameElement.classList.remove("hidden");
   babyNameElement.innerHTML = `<span class="blink">Generating a baby name that means '${instructionsInput.value}'</span>`;
-  // make a Call to the API
-  console.log(`Generating baby name...`);
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
-  console.log(apiURL);
-
   axios.get(apiURL).then(displayBabyName);
-  // Display generated name and description
 }
 
 let babyNameFormElement = document.querySelector(
